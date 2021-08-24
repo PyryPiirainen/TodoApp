@@ -67,7 +67,7 @@ namespace TodoApp.Controllers
             }
 
             await _repository.SaveChangesAsync();
-            return Ok();
+            return Ok(updatedItem);
         }
 
         [HttpDelete("{id}")]
